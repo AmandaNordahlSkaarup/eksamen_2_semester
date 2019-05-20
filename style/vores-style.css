@@ -20,9 +20,16 @@ time, mark, audio, video {
 	 }
 
 .baggrund {
-	background: repeat;
+	background: no-repeat;
+	background-size: cover;
 	position: absolute;
 	width: 100%;
+}
+
+.overskrift {
+	position: absolute;
+	padding-top: 200px;
+	align-content: center;
 }
 
 
@@ -75,3 +82,5 @@ time, mark, audio, video {
 .header-right {
   float: right;
 }
+
+/*TIMELINE*/
