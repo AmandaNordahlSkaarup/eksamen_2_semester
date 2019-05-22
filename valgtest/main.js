@@ -12,7 +12,6 @@ let Q8 = document.querySelector(".Q8");
 let Q9 = document.querySelector(".Q9");
 let Q10 = document.querySelector(".Q10");
 
-
 //De forskellige svar muligheder 
 let C1 = document.querySelector(".C1");
 let C2 = document.querySelector(".C2");
@@ -58,6 +57,7 @@ C19.addEventListener("click", C19Fx);
 C20.addEventListener("click", C20Fx);
 
 //
+
 Q10.style.display = "none";
 Q9.style.display = "none";
 Q8.style.display = "none";
@@ -72,6 +72,9 @@ Q1.style.display = "block";
 
 
 //variable  
+
+
+
 let venstre = 0; 
 let konservative = 0; 
 let stramkurs = 0;
@@ -87,10 +90,11 @@ let nyeBorgelige = 0;
 let danskFolkeparti = 0;
 
 
+
+
 // spørgsmål 1: DK nok miljøet?
 // Ja 
 function C1Fx(){ 
-	
    Q10.style.display = "none";
    Q9.style.display = "none";
    Q8.style.display = "none";
@@ -107,7 +111,6 @@ function C1Fx(){
 }
 // nej 
 function C2Fx(){ 
-    
 	Q10.style.display = "none";
     Q9.style.display = "none";
     Q8.style.display = "none";
@@ -140,7 +143,6 @@ function C3Fx(){
 
 //nej 
 function C4Fx(){ 
-    
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -172,7 +174,6 @@ function C5Fx(){
 
 //nej 
 function C6Fx(){
-    
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -204,7 +205,6 @@ function C7Fx(){
 
 //nej 
 function C8Fx(){ 
-    
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -236,7 +236,6 @@ function C9Fx(){
 
 //nej 
 function C10Fx(){ 
-    
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -268,7 +267,6 @@ function C11Fx(){
 
 //nej 
 function C12Fx(){ 
-    
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -300,7 +298,6 @@ function C13Fx(){
 
 //nej 
 function C14Fx(){ 
-    
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "block";
@@ -332,7 +329,6 @@ function C15Fx(){
 
 //nej 
 function C16Fx(){ 
-    
 	Q10.style.display = "none";
 	Q9.style.display = "block";
 	Q8.style.display = "none";
@@ -364,7 +360,6 @@ function C17Fx(){
 
 //nej 
 function C18Fx(){ 
-    
 	Q10.style.display = "block";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -391,28 +386,31 @@ function C19Fx(){
     Q3.style.display = "none";
     Q2.style.display = "none";
     Q1.style.display = "none"; 
-    beregnStemmer(4,4,0,5,5,5,5,3,3,5,2,0,3);
-	 let all = document.querySelector(".allQuestions");
-    all.innerHTML =
-		`
-	Venstre: ${venstre} <br> 
-	Konservative: ${konservative} <br> 
-	Stramkurs: ${stramkurs} <br> 
-	Socialdemokratiet: ${socialDemokratiet} <br> 
-	SF: ${SF} <br> 
-	Alternativet: ${alternativet} <br>
-	radikaleVenstre: ${radikaleVenstre} <br> 
-	klausR: ${klausR} <br> 
-	liberalAlliance: ${liberalAlliance} <br> 
-	enhedesListen: ${enhedesListen} <br> 
-	kristenDemokraterne: ${kristenDemokraterne} <br> 
-	nyeBorgelige: ${nyeBorgelige} <br> 
-	danskFolkeparti: ${danskFolkeparti} <br> 		`
-}
-
+	beregnStemmer(4,4,0,5,5,5,5,3,3,5,2,0,3);
+	    
+	//${} er for linjer med stings og expressions i!
+	    let all = document.querySelector(".allQuestions");
+	all.innerHTML =
+	        `
+	    Venstre V: ${venstre} <br> 
+	    Det Konservative Folkeparti C: ${konservative} <br> 
+	    Stram kurs P: ${stramkurs} <br> 
+	    Socialdemokratiet S: ${socialDemokratiet} <br> 
+	    SF - Socialitisk Folkeparti F: ${SF} <br> 
+	    Alternativet Å: ${alternativet} <br>
+	    Radikale Venstre B: ${radikaleVenstre} <br> 
+	    Klaus Riskær Pedersen E: ${klausR} <br> 
+	    Liberal Alliance I: ${liberalAlliance} <br> 
+	    Enhedeslisten Ø: ${enhedesListen} <br> 
+	    Kristendemokraterne K: ${kristenDemokraterne} <br> 
+	    Nye Borgelige D: ${nyeBorgelige} <br> 
+	    Dansk Folkeparti O: ${danskFolkeparti} <br> 
+	            `
+	        
+	} 
+	
 //nej 
-function C20Fx(){ 
-    
+function C20Fx(){
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -423,28 +421,32 @@ function C20Fx(){
     Q3.style.display = "none";
     Q2.style.display = "none";
     Q1.style.display = "none"; 
-    beregnStemmer(1,1,0,0,0,0,0,1,2,0,3,2,2);
-	 let all = document.querySelector(".allQuestions");
-    all.innerHTML =
-		`
-	Venstre V: ${venstre} <br> 
-	Det Konservative Folkeparti C: ${konservative} <br> 
-	Stram kurs P: ${stramkurs} <br> 
-	Socialdemokratiet S: ${socialDemokratiet} <br> 
-	SF - Socialitisk Folkeparti F: ${SF} <br> 
-	Alternativet Å: ${alternativet} <br>
-	Radikale Venstre B: ${radikaleVenstre} <br> 
-	Klaus Riskær Pedersen E: ${klausR} <br> 
-	Liberal Alliance I: ${liberalAlliance} <br> 
-	Enhedeslisten Ø: ${enhedesListen} <br> 
-	Kristendemokraterne K: ${kristenDemokraterne} <br> 
-	Nye Borgelige D: ${nyeBorgelige} <br> 
-	Dansk Folkeparti O: ${danskFolkeparti} <br> 		`
-}
+	beregnStemmer(1,1,0,0,0,0,0,1,2,0,3,2,2);
+	    
+//${} er til linjer med stings og expressions i!
+    let all = document.querySelector(".allQuestions");
+all.innerHTML =
+        `
+    Venstre V: ${venstre} <br> 
+    Det Konservative Folkeparti C: ${konservative} <br> 
+    Stram kurs P: ${stramkurs} <br> 
+    Socialdemokratiet S: ${socialDemokratiet} <br> 
+    SF - Socialitisk Folkeparti F: ${SF} <br> 
+    Alternativet Å: ${alternativet} <br>
+    Radikale Venstre B: ${radikaleVenstre} <br> 
+    Klaus Riskær Pedersen E: ${klausR} <br> 
+    Liberal Alliance I: ${liberalAlliance} <br> 
+    Enhedeslisten Ø: ${enhedesListen} <br> 
+    Kristendemokraterne K: ${kristenDemokraterne} <br> 
+    Nye Borgelige D: ${nyeBorgelige} <br> 
+    Dansk Folkeparti O: ${danskFolkeparti} <br> 
+            `
+	}
+	
 
 
 function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDemokratietPoint, alternativetPoint, sFPoint, radikaleVenstrePoint, klausRPoint, liberalAlliancePoint, enhedesListenPoint, kristenDemokraternePoint, nyeBorgeligePoint, danskFolkepartiPoint) { 
-
+ 
 	venstre =  venstrePoint + venstre;
     konservative = konservativePoint + konservative;
     stramkurs = stramkursPoint + konservative;
@@ -458,8 +460,6 @@ function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDe
 	kristenDemokraterne = kristenDemokraternePoint + kristenDemokraterne;
 	nyeBorgelige = nyeBorgeligePoint + nyeBorgelige;
 	danskFolkeparti = danskFolkepartiPoint + danskFolkeparti;
-
 }
-
 
 
