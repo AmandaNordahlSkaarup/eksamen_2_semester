@@ -1,4 +1,3 @@
-// kode lavet af Christian 
 
 //Spørgsmålene står her 
 let Q1 = document.querySelector(".Q1");
@@ -75,11 +74,11 @@ Q1.style.display = "block";
 
 
 
-let venstre = 0; 
-let konservative = 0; 
+let venstre = 0;
+let konservative = 0;
 let stramkurs = 0;
-let socialDemokratiet = 0; 
-let alternativet = 0; 
+let socialDemokratiet = 0;
+let alternativet = 0;
 let SF = 0;
 let radikaleVenstre = 0;
 let klausR = 0;
@@ -94,55 +93,40 @@ let danskFolkeparti = 0;
 
 // spørgsmål 1: DK nok miljøet?
 // Ja 
-function C1Fx(){ 
-   Q10.style.display = "none";
-   Q9.style.display = "none";
-   Q8.style.display = "none";
-   Q7.style.display = "none";
-   Q6.style.display = "none";
-   Q5.style.display = "none";
-   Q4.style.display = "none"; 
-   Q3.style.display = "none";
-   Q2.style.display = "block";
-   Q1.style.display = "none"; 
-   
-   beregnStemmer(0,0,0,0,0,0,0,0,0,0,0,5,5);
+function C1Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
+	Q5.style.display = "none";
+	Q4.style.display = "none";
+	Q3.style.display = "none";
+	Q2.style.display = "block";
+	Q1.style.display = "none";
+
+	beregnStemmer(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5);
 
 }
 // nej 
-function C2Fx(){ 
+function C2Fx() {
 	Q10.style.display = "none";
-    Q9.style.display = "none";
-    Q8.style.display = "none";
-    Q7.style.display = "none";
-    Q6.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "block";
-    Q1.style.display = "none"; 
-   
-    beregnStemmer(5,5,0,5,5,5,5,5,5,5,5,0,0);
+	Q3.style.display = "none";
+	Q2.style.display = "block";
+	Q1.style.display = "none";
+
+	beregnStemmer(5, 5, 0, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0);
 }
 
 //spørgsmål 2: Klima Afgift?
 //ja 
-function C3Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "none";
-	Q8.style.display = "none";
-	Q7.style.display = "none";
-	Q6.style.display = "none";
-	Q5.style.display = "none";
-	Q4.style.display = "none";
-    Q3.style.display = "block";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(0,2,0,3,5,3,3,4,0,4,4,0,0);
-}
-
-//nej 
-function C4Fx(){ 
+function C3Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -150,30 +134,30 @@ function C4Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "block";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(2,2,3,0,0,0,0,0,4,0,0,5,4);
+	Q3.style.display = "block";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(0, 2, 0, 3, 5, 3, 3, 4, 0, 4, 4, 0, 0);
+}
+
+//nej 
+function C4Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
+	Q5.style.display = "none";
+	Q4.style.display = "none";
+	Q3.style.display = "block";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(2, 2, 3, 0, 0, 0, 0, 0, 4, 0, 0, 5, 4);
 }
 
 //spørgsmål 3: Stramninger Udlændinge? 
 //ja 
-function C5Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "none";
-	Q8.style.display = "none";
-	Q7.style.display = "none";
-	Q6.style.display = "none";
-	Q5.style.display = "none";
-	Q4.style.display = "block";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(3,3,5,2,0,0,0,3,3,0,0,5,5);
-}
-
-//nej 
-function C6Fx(){
+function C5Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -181,30 +165,30 @@ function C6Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "block";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(2,1,0,2,5,4,5,1,2,5,3,0,0);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(3, 3, 5, 2, 0, 0, 0, 3, 3, 0, 0, 5, 5);
+}
+
+//nej 
+function C6Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
+	Q5.style.display = "none";
+	Q4.style.display = "block";
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(2, 1, 0, 2, 5, 4, 5, 1, 2, 5, 3, 0, 0);
 }
 
 //spørgsmål 4: Asylstop?
 //ja 
-function C7Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "none";
-	Q8.style.display = "none";
-	Q7.style.display = "none";
-	Q6.style.display = "none";
-	Q5.style.display = "block";
-	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(3,4,5,1,0,0,0,2,3,0,0,5,4);
-}
-
-//nej 
-function C8Fx(){ 
+function C7Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -212,30 +196,30 @@ function C8Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "block";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(1,0,0,1,5,4,5,1,2,0,3,0,0);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(3, 4, 5, 1, 0, 0, 0, 2, 3, 0, 0, 5, 4);
+}
+
+//nej 
+function C8Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
+	Q5.style.display = "block";
+	Q4.style.display = "none";
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(1, 0, 0, 1, 5, 4, 5, 1, 2, 0, 3, 0, 0);
 }
 
 //spørgsmål 5: Cigaretter?
 //ja 
-function C9Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "none";
-	Q8.style.display = "none";
-	Q7.style.display = "none";
-	Q6.style.display = "block";
-	Q5.style.display = "none";
-	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(3,4,0,3,5,4,5,0,0,4,5,0,2);
-}
-
-//nej 
-function C10Fx(){ 
+function C9Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -243,30 +227,30 @@ function C10Fx(){
 	Q6.style.display = "block";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(1,1,2,1,0,1,0,4,5,0,0,4,2);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(3, 4, 0, 3, 5, 4, 5, 0, 0, 4, 5, 0, 2);
+}
+
+//nej 
+function C10Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "block";
+	Q5.style.display = "none";
+	Q4.style.display = "none";
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(1, 1, 2, 1, 0, 1, 0, 4, 5, 0, 0, 4, 2);
 }
 
 //spørgsmål 6: uddnnelsesloft? 
 //ja 
-function C11Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "none";
-	Q8.style.display = "none";
-	Q7.style.display = "block";
-	Q6.style.display = "none";
-	Q5.style.display = "none";
-	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(0,1,0,4,5,5,5,5,4,5,5,2,0);
-}
-
-//nej 
-function C12Fx(){ 
+function C11Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -274,30 +258,30 @@ function C12Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(5,4,0,0,0,0,0,0,0,0,0,3,5);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(0, 1, 0, 4, 5, 5, 5, 5, 4, 5, 5, 2, 0);
+}
+
+//nej 
+function C12Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "block";
+	Q6.style.display = "none";
+	Q5.style.display = "none";
+	Q4.style.display = "none";
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(5, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 5);
 }
 
 //spørgsmål 7: Topskat?
 //ja 
-function C13Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "none";
-	Q8.style.display = "block";
-	Q7.style.display = "none";
-	Q6.style.display = "none";
-	Q5.style.display = "none";
-	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(3,4,3,2,2,0,0,5,5,1,2,4,1);
-}
-
-//nej 
-function C14Fx(){ 
+function C13Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "block";
@@ -305,30 +289,30 @@ function C14Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(2,1,2,3,4,4,5,0,0,4,4,2,4);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(3, 4, 3, 2, 2, 0, 0, 5, 5, 1, 2, 4, 1);
+}
+
+//nej 
+function C14Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "block";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
+	Q5.style.display = "none";
+	Q4.style.display = "none";
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(2, 1, 2, 3, 4, 4, 5, 0, 0, 4, 4, 2, 4);
 }
 
 //spørgsmål 8: Kontanthjælpsloft?
 //ja 
-function C15Fx(){ 
-    Q10.style.display = "none";
-	Q9.style.display = "block";
-	Q8.style.display = "none";
-	Q7.style.display = "none";
-	Q6.style.display = "none";
-	Q5.style.display = "none";
-	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(0,0,0,4,5,5,5,4,2,5,4,2,2);
-}
-
-//nej 
-function C16Fx(){ 
+function C15Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "block";
 	Q8.style.display = "none";
@@ -336,30 +320,30 @@ function C16Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(5,5,0,1,0,0,0,1,3,0,1,3,3);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(0, 0, 0, 4, 5, 5, 5, 4, 2, 5, 4, 2, 2);
 }
 
-//spørgsmål 9: Cannabis? 
-//ja 
-function C17Fx(){ 
-    Q10.style.display = "block";
-	Q9.style.display = "none";
+//nej 
+function C16Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "block";
 	Q8.style.display = "none";
 	Q7.style.display = "none";
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(0,0,0,2,5,5,5,5,4,5,0,2,0);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(5, 5, 0, 1, 0, 0, 0, 1, 3, 0, 1, 3, 3);
 }
 
-//nej 
-function C18Fx(){ 
+//spørgsmål 9: Cannabis? 
+//ja 
+function C17Fx() {
 	Q10.style.display = "block";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -367,50 +351,30 @@ function C18Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-    beregnStemmer(5,5,0,3,0,0,0,0,1,0,5,3,2);
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(0, 0, 0, 2, 5, 5, 5, 5, 4, 5, 0, 2, 0);
 }
 
-//spørgsmål 10: Samtykke?
-//ja 
-function C19Fx(){ 
-    Q10.style.display = "none";
+//nej 
+function C18Fx() {
+	Q10.style.display = "block";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
 	Q7.style.display = "none";
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-	beregnStemmer(4,4,0,5,5,5,5,3,3,5,2,0,3);
-	    
-	//${} er for linjer med stings og expressions i!
-	    let all = document.querySelector(".allQuestions");
-	all.innerHTML =
-	        `
-	    Venstre V: ${venstre} <br> 
-	    Det Konservative Folkeparti C: ${konservative} <br> 
-	    Stram kurs P: ${stramkurs} <br> 
-	    Socialdemokratiet S: ${socialDemokratiet} <br> 
-	    SF - Socialitisk Folkeparti F: ${SF} <br> 
-	    Alternativet Å: ${alternativet} <br>
-	    Radikale Venstre B: ${radikaleVenstre} <br> 
-	    Klaus Riskær Pedersen E: ${klausR} <br> 
-	    Liberal Alliance I: ${liberalAlliance} <br> 
-	    Enhedeslisten Ø: ${enhedesListen} <br> 
-	    Kristendemokraterne K: ${kristenDemokraterne} <br> 
-	    Nye Borgelige D: ${nyeBorgelige} <br> 
-	    Dansk Folkeparti O: ${danskFolkeparti} <br> 
-	            `
-	        
-	} 
-	
-//nej 
-function C20Fx(){
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(5, 5, 0, 3, 0, 0, 0, 0, 1, 0, 5, 3, 2);
+}
+
+//spørgsmål 10: Samtykke?
+//ja 
+function C19Fx() {
 	Q10.style.display = "none";
 	Q9.style.display = "none";
 	Q8.style.display = "none";
@@ -418,42 +382,201 @@ function C20Fx(){
 	Q6.style.display = "none";
 	Q5.style.display = "none";
 	Q4.style.display = "none";
-    Q3.style.display = "none";
-    Q2.style.display = "none";
-    Q1.style.display = "none"; 
-	beregnStemmer(1,1,0,0,0,0,0,1,2,0,3,2,2);
-	    
-//${} er til linjer med stings og expressions i!
-    let all = document.querySelector(".allQuestions");
-all.innerHTML =
-        `
-    Venstre V: ${venstre} <br> 
-    Det Konservative Folkeparti C: ${konservative} <br> 
-    Stram kurs P: ${stramkurs} <br> 
-    Socialdemokratiet S: ${socialDemokratiet} <br> 
-    SF - Socialitisk Folkeparti F: ${SF} <br> 
-    Alternativet Å: ${alternativet} <br>
-    Radikale Venstre B: ${radikaleVenstre} <br> 
-    Klaus Riskær Pedersen E: ${klausR} <br> 
-    Liberal Alliance I: ${liberalAlliance} <br> 
-    Enhedeslisten Ø: ${enhedesListen} <br> 
-    Kristendemokraterne K: ${kristenDemokraterne} <br> 
-    Nye Borgelige D: ${nyeBorgelige} <br> 
-    Dansk Folkeparti O: ${danskFolkeparti} <br> 
-            `
-	}
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(4, 4, 0, 5, 5, 5, 5, 3, 3, 5, 2, 0, 3);
+
 	
+	let all = document.querySelector(".allQuestions");
+	
+	let obj1 = {
+		text: "Venstre V:",
+		val: venstre
+	}
+	let obj2 = {
+		text: "Det Konservative Folkeparti C:",
+		val: konservative
+	}
+	let obj3 = {
+		text: "Stram kurs P:",
+		val: stramkurs
+	}
+
+	let obj4 = {
+		text: "SF - Socialitisk Folkeparti F:",
+		val: SF
+	}
+	let obj5 = {
+		text: "Alternativet Å:",
+		val: alternativet
+	}
+	let obj6 = {
+		text: "Radikale Venstre B:",
+		val: radikaleVenstre
+	}
+
+	let obj7 = {
+		text: "Klaus Riskjær Pedersen E:",
+		val: klausR
+	}
+
+	let obj8 = {
+		text: "Liberal Alliance I:",
+		val: liberalAlliance
+	}
+
+	let obj9 = {
+		text: "Enhedslisten Ø:",
+		val: enhedesListen
+	}
+
+	let obj10 = {
+		text: "Kristendemokraterne K:",
+		val: kristenDemokraterne
+	}
+
+	let obj11 = {
+		text: "Nye Borgerlige D:",
+		val: nyeBorgelige
+	}
+
+	let obj12 = {
+		text: "Dansk Folkeparti O:",
+		val: radikaleVenstre
+	}
+
+	let obj13 = {
+		text: "Socialdemokratiet S:",
+		val: socialDemokratiet
+	}
+	let arr = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13]
+
+	function compare(a, b) {
+		if (a.val > b.val) {
+			return -1;
+		}
+		if (a.val < b.val) {
+			return 1;
+		}
+		return 0;
+	}
+	arr.sort(compare);
+
+	let htmlArray = arr.map((e) => {
+		return e.text + " " + e.val + "<br>"
+	}).join("")
+
+	all.innerHTML = htmlArray
+}
+
+//nej 
+function C20Fx() {
+	Q10.style.display = "none";
+	Q9.style.display = "none";
+	Q8.style.display = "none";
+	Q7.style.display = "none";
+	Q6.style.display = "none";
+	Q5.style.display = "none";
+	Q4.style.display = "none";
+	Q3.style.display = "none";
+	Q2.style.display = "none";
+	Q1.style.display = "none";
+	beregnStemmer(1, 1, 0, 0, 0, 0, 0, 1, 2, 0, 3, 2, 2);
+
+	//${} er til linjer med stings og expressions i!
+	let all = document.querySelector(".allQuestions");
+	let obj1 = {
+		text: "Venstre V:",
+		val: venstre
+	}
+	let obj2 = {
+		text: "Det Konservative Folkeparti C:",
+		val: konservative
+	}
+	let obj3 = {
+		text: "Stram kurs P:",
+		val: stramkurs
+	}
+
+	let obj4 = {
+		text: "SF - Socialitisk Folkeparti F:",
+		val: SF
+	}
+	let obj5 = {
+		text: "Alternativet Å:",
+		val: alternativet
+	}
+	let obj6 = {
+		text: "Radikale Venstre B:",
+		val: radikaleVenstre
+	}
+
+	let obj7 = {
+		text: "Klaus Riskjær Pedersen E:",
+		val: klausR
+	}
+
+	let obj8 = {
+		text: "Liberal Alliance I:",
+		val: liberalAlliance
+	}
+
+	let obj9 = {
+		text: "Enhedslisten Ø:",
+		val: enhedesListen
+	}
+
+	let obj10 = {
+		text: "Kristendemokraterne K:",
+		val: kristenDemokraterne
+	}
+
+	let obj11 = {
+		text: "Nye Borgerlige D:",
+		val: nyeBorgelige
+	}
+
+	let obj12 = {
+		text: "Dansk Folkeparti O:",
+		val: radikaleVenstre
+	}
+
+	let obj13 = {
+		text: "Socialdemokratiet S:",
+		val: socialDemokratiet
+	}
+	let arr = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13]
+
+	function compare(a, b) {
+		if (a.val > b.val) {
+			return -1;
+		}
+		if (a.val < b.val) {
+			return 1;
+		}
+		return 0;
+	}
+	arr.sort(compare);
+
+	let htmlArray = arr.map((e) => {
+		return e.text + " " + e.val + "<br>"
+	}).join("")
+
+	all.innerHTML = htmlArray
+}
 
 
-function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDemokratietPoint, alternativetPoint, sFPoint, radikaleVenstrePoint, klausRPoint, liberalAlliancePoint, enhedesListenPoint, kristenDemokraternePoint, nyeBorgeligePoint, danskFolkepartiPoint) { 
- 
-	venstre =  venstrePoint + venstre;
-    konservative = konservativePoint + konservative;
-    stramkurs = stramkursPoint + konservative;
-    socialDemokratiet = socialDemokratietPoint + socialDemokratiet; 
+
+function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDemokratietPoint, alternativetPoint, sFPoint, radikaleVenstrePoint, klausRPoint, liberalAlliancePoint, enhedesListenPoint, kristenDemokraternePoint, nyeBorgeligePoint, danskFolkepartiPoint) {
+
+	venstre = venstrePoint + venstre;
+	konservative = konservativePoint + konservative;
+	stramkurs = stramkursPoint + konservative;
+	socialDemokratiet = socialDemokratietPoint + socialDemokratiet;
 	alternativet = alternativetPoint + alternativet;
 	SF = sFPoint + SF;
-	radikaleVenstre = radikaleVenstrePoint + radikaleVenstre; 
+	radikaleVenstre = radikaleVenstrePoint + radikaleVenstre;
 	klausR = klausRPoint + klausR;
 	liberalAlliance = liberalAlliancePoint + liberalAlliance;
 	enhedesListen = enhedesListenPoint + enhedesListen;

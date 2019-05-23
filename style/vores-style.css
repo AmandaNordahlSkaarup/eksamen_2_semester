@@ -43,12 +43,14 @@ html {
   background:image();
   padding: 20px 10px;
 	position: fixed;
-	align-items: center;
+  align-items: center;
+  margin: 0px 5px 0px 45px;
 }
 
 /* Style on the header logo*/
 .header-logo {
-	width: 35%;
+  width: 40%;
+  /* bring your own prefixes */
 }
 
 
@@ -65,7 +67,7 @@ html {
 }
 
 .logo {
-	padding: 0;
+	padding: 0px;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
