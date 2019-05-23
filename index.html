@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="en"><head>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,28 +14,126 @@
     <title>Eksamen</title>
   </head>
   <body>
+	  
+	  <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4 menu">
+		
+		<a href="#">Partierne</a>
+		<a href="#">Tag Quizzen</a>
+		<a href="#">Sociale medier</a>
+		<a href="#">APP'en</a>
+	
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+		
+      <span class="navbar-toggler-icon"></span>
+		
+    </button>
+	  
+  </nav>
+</div>
 		
 	<div class="header col-12">
-		<div class="header-right">
-			<div class="links col-sm">
-		<a href="#">Partierne</a>
-			<a href="#">Tag Quizzen</a>
-			</div>
-			<div class="head-logo col-sm">
+			<div class="head-logo col-sm-12">
 					<a href="#">
 						<img class="header-logo" src="img/logo6.png" alt="logo">
 					</a>
 					</div>
-    <div class="links col-sm">
-			<a href="#">Sociale medier</a>
-			<a href="#">APP</a>
-			</div>
-		</div>
 	</div>
 	  
-	  <div class="overskrift col-12">
-	  <h1 class="titel">Hvor skal dit X stå?</h1>
+	  <div class="overskrift col-12 card-columns">
+	  <h3 class="titel">Hvor skal dit X stå?</h3>
 	  	</div>
+	  
+<div class="row col-12 partierne">
+	<div class=" col-12 columns">
+	  <h3>Læs mere om partierne her</h3>
+	  </div>
+	
+  <div class="column">
+    <img src="img/Partilogoer/Alternativet.png" alt="Å" >
+	  <img class="show" src="img/partipersona/å.png" alt="å" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/Radikale.png" alt="B" >
+	  <img src="img/partipersona/b.png" alt="b" class="show" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/enhedslistenlogo.png" alt="Ø">
+	  <img src="img/partipersona/ø.png" alt="ø" class="show" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/SF.png" alt="SF">
+	  <img src="img/partipersona/f.png" alt="sf" class="show" onclick="myFunction(this);">
+  </div>
+	<div class="column">
+    <img src="img/Partilogoer/socialdemokratiet.png" alt="A" >
+	  <img class="show" src="img/partipersona/a.png" alt="å" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/kristendemokraterne.png" alt="K" >
+	  <img src="img/partipersona/k.png" alt="k" class="show" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/klaus_riskjaer_pedersen.png" alt="E">
+	  <img src="img/partipersona/e.png" alt="ø" class="show" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/konservative.png" alt="C">
+	  <img src="img/partipersona/c.png" alt="sf" class="show" onclick="myFunction(this);">
+  </div>
+	<div class="column">
+    <img src="img/Partilogoer/liberalalliance.png" alt="I">
+	  <img src="img/partipersona/i.png" alt="ø" class="show" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/Venstre.png" alt="V">
+	  <img src="img/partipersona/v.png" alt="sf" class="show" onclick="myFunction(this);">
+  </div>
+	<div class="column">
+    <img src="img/Partilogoer/StramKurs.png" alt="P">
+	  <img src="img/partipersona/p.png" alt="p" class="show" onclick="myFunction(this);">
+  </div>
+	<div class="column">
+    <img src="img/Partilogoer/DF.png" alt="O">
+	  <img src="img/partipersona/o.png" alt="o" class="show" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="img/Partilogoer/nyborgelige.png" alt="D">
+	  <img src="img/partipersona/d.png" alt="d" class="show" onclick="myFunction(this);">
+  </div>
+	
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+	
+<script>	  
+	 function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+} 
+	  </script>
 	 
 	<div class="footer">
 		<div class="copy">
