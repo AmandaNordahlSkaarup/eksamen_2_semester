@@ -1,64 +1,124 @@
 <!doctype html>
-<html lang="en"><head>
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="style/vores-style.css">
-    <title>Eksamen</title>
-  </head>
-  <body>
-	  
-	  <div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4 menu">
-		
-		<a href="#">Partierne</a>
-		<a href="#">Tag Quizzen</a>
-		<a href="#">Sociale medier</a>
-		<a href="#">APP'en</a>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport">
+<title>Untitled Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="style/teststyle.css" rel="stylesheet" type="text/css">
+</head>
+	<body>
 	
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent">
+		<div class="background">
+		<img src="img/baggrund.jpg" alt="">
+		</div>
 		
-      <span class="navbar-toggler-icon"></span>
+	<div class="navbar">
+  <a href="#partioversigt">Partioversigt</a>
+  <a href="#quiz">Quizzen</a>
+  <a href="#socialemedier">Sociale medier</a>
+  <a href="#APP">APP'en</a>
+</div>	
 		
-    </button>
-	  
-  </nav>
-</div>
-		
-	<div class="header col-12">
-			<div class="head-logo col-sm-12">
-					<a href="#">
-						<img class="header-logo" src="img/logo6.png" alt="logo">
-					</a>
-					</div>
+
+		<div class="container">
+			
+			<div class="col-12">
+			<img class="img-fluid logo" src="img/logo6.png" alt="logo">
+				<br>
+				<br>
+				<h3>Ved du heller ikke hvad du skal stemme?</h3>
+				<h3>Udforsk de forskellige partier her eller tag en kandidattest, det kan være du bliver kloger på hvad du skal stemme.</h3>
+			</div>
+			
+			
+<ul id="partioversigt" class="progressbar col-12 col-md-12 col-sm-12">
+	<h1 class="partioversigt">Partioversigt</h1>
+	<p class="partitext">Klik på partierne neden for og læs mere om deres spidskandidat.</p>
+	<div class="popup" onclick="myFunction('myPopup')"> <!-- under diven er der diffineret onclick(myPopup) som stemmer over ens med span id'et, dette er gældene på alle iconer for parlementerne. id'erne er forskellige da et ide ikke må være ens --> 
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/Alternativet.png"><span class="popuptext" id="myPopup"><img src="img/partipersona/å.png" alt="persona"></span> </button></li>
 	</div>
-	  
-	  <div class="overskrift col-12 card-columns">
-	  <h3 class="titel">Hvor skal dit X stå?</h3>
-	  	</div>
-	  
-<div class="container social">
-	  <div class="row">
-	<img src="" alt="">
-	</div> 
-	<div class="row">
-	<img src="" alt="">
-	</div> 
-	<div class="row">
-	<img src="" alt="">
-	</div>  
+
+	<div class="popup" onclick="myFunction('myPopup2')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/Radikale.png"><span class="popuptext" id="myPopup2"><img src="img/partipersona/b.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup1" onclick="myFunction('myPopup3')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/enhedslistenlogo.png"><span class="popuptext1" id="myPopup3"><img src="img/partipersona/ø.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup1" onclick="myFunction('myPopup4')">
+	<li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/SF.png"><span class="popuptext1" id="myPopup4"><img src="img/partipersona/f.png" alt="persona"></span> </button></li>
+	</div>
+
+	<div class="popup" onclick="myFunction('myPopup5')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/socialdemokratiet.png"><span class="popuptext" id="myPopup5"><img src="img/partipersona/a.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup" onclick="myFunction('myPopup6')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/kristendemokraterne.png"><span class="popuptext" id="myPopup6"><img src="img/partipersona/k.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup1" onclick="myFunction('myPopup7')">
+		<li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/klaus_riskjaer_pedersen.png"><span class="popuptext1" id="myPopup7"><img src="img/partipersona/e.png" alt="persona"></span> </button></li>
+	</div>
+
+	<div class="popup1" onclick="myFunction('myPopup8')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/konservative.png"><span class="popuptext1" id="myPopup8"><img src="img/partipersona/c.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup" onclick="myFunction('myPopup9')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/liberalalliance.png"><span class="popuptext" id="myPopup9"><img src="img/partipersona/i.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup" onclick="myFunction('myPopup10')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/Venstre.png"><span class="popuptext" id="myPopup10"><img src="img/partipersona/v.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup1" onclick="myFunction('myPopup11')">
+		<li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/StramKurs.png"><span class="popuptext1" id="myPopup11"><img src="img/partipersona/p.png" alt="persona"></span> </button></li>
+	</div>
+
+	<div class="popup1" onclick="myFunction('myPopup12')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/DF.png"><span class="popuptext1" id="myPopup12"><img src="img/partipersona/o.png" alt="persona"></span> </button></li>
+	</div>
+	
+	<div class="popup" onclick="myFunction('myPopup13')">
+  <li class="active"><button type = "button"> <img class="avatar" src="img/Partilogoer/nyborgelige.png"><span class="popuptext" id="myPopup13"><img src="img/partipersona/d.png" alt="persona"></span> </button></li>
+	</div>
+					
+</ul>
+			
+	<div id="quiz" class="quizzen">
+			<h1 class="quiiz">Tag vores kandidattest her</h1>
+			</div>	
+			
+  <div id="socialemedier" class="social">
+	  <h1 class="so-overskrift">Vores sociale medier</h1>
+		<!--<p class="so-text">Følg med om valget på vores sociale medier.</p>-->
+    <div class="col-sm-2">
+		<a href="https://www.facebook.com/SÆT-X-2190450821036111/" target="_blank"> 
+      <img class="img-fluid so-img" src="img/socialmedia/facebook.png" alt="social">
+   </a> 
 	  </div>
+    <div class="col-sm-2">
+		<a href="https://www.instagram.com/saetkrydset/?hl=da" target="_blank">
+      <img class="img-fluid so-img" src="img/socialmedia/instagram.png" alt="social">
+    </a>
+	  </div>
+    <div class="col-sm-2">
+		<a href="https://twitter.com/Krydset_" target="_blank">
+      <img class="img-fluid so-img" src="img/socialmedia/twitter.png" alt="social">
+    </a>
+	</div>
+  </div>
+			
+			<div id="APP" class="col-12">
+			<h1 class="appen">Vores APP</h1>
+				<video class="reklamefilm" controls src="video/sætXreklame.mp4"></video>
+		</div>
+			
 	 
 	<div class="footer">
 		<div class="copy">
@@ -67,13 +127,43 @@
 		<div class="links">
 			Mail: saetx@mail.dk
 		</div>
-	  </div>
-	  
-	   <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  		
-	</body>
+	  </div>		
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>		
+</div>
+		
+		
+		<script>
+// When the user clicks on <div>, open the popup
+			//under function er der diffineret myFunction(id) som gør at det er et uspicifikt id men hvor vi derimod i vores <div> diffinere den enkelte id der skal poppeup
+function myFunction(id) {
+  var popup = document.getElementById(id);
+  popup.classList.toggle("show");
+}
+</script>
+	
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+		</script>
+	
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
