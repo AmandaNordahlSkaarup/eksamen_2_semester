@@ -18,15 +18,11 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	
 	 }
 
-html {
-	background: url("../img/baggrund.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
+	
+
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -57,13 +53,13 @@ a {
 	
   color: black;
   
-  padding: 12px;
+  padding: 12px 0px;
   
   font-size: 18px; 
   line-height: 25px;
-	position: fixed; /* Set the navbar to fixed position */
+	position: static; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+	width: 100%; /* Full width */
   
  
 }
