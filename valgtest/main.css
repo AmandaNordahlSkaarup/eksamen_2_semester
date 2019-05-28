@@ -1,25 +1,61 @@
 
 html {
-    background: url(background14_Edit.jpg) no-repeat center center fixed; 
+    background: url(background14_Edit.jpg) no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
 
-  .allQuestions
-{
+  .quizTitel
+  {
     font-family: monospace;
+      text-align: center;
+      padding-top: 25px;
+  }
+
+  .partiTestP{
+    font-family: monospace;
+    text-align: center;
     font-size: 1.15rem;
-    width: 600px; 
-    height: 400px;
-    background: white;
+  }
+
+
+  .quizBox {
+  margin-left: 400px;
+  width: 800px;
+  height: 600px;
+  
+  background: white;
+}
+.resultText
+{
+    padding-top: -100px; 
+    padding-left: 150px;
+    font-family: monospace;
+    font-size: 1.7rem;
     text-align: start;
-    padding-left: 180px;
-    padding-top: 20px;
+    z-index: 3;
 }
 
-button {
+.resultText img
+{
+    display: inline;
+    border: none;
+}
+
+.allQuestions
+{
+    padding-left: 250px;
+    font-family: monospace;
+    font-size: 1.15rem;
+    text-align: start;
+    
+}
+ 
+
+
+.btnQ {
     width: 100px;
     height: 40px;
     border: none;

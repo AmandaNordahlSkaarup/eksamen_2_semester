@@ -1,3 +1,16 @@
+
+
+html {
+  background: url(../img/baggrund.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+}
 body h1 {
   font-weight: 100;
   text-align: center;
@@ -184,9 +197,54 @@ justify-content: center;
 	}
 }
 
-/*KANDIDATTEST*/
-.quiiz {
-	padding: 60px 10px;
+/* KANDIDAT TEST */
+
+.quizTitel
+{
+	font-family: monospace;
+		text-align: center;
+		padding-top: 300px;
+}
+
+.partiTestP{
+	font-family: monospace;
+	text-align: center;
+	font-size: 1.15rem;
+}
+
+
+.quizBox {
+}
+.resultText
+{
+	padding-top: -100px; 
+	padding-left: 150px;
+	font-family: monospace;
+	font-size: 1.7rem;
+	text-align: start;
+	z-index: 3;
+}
+
+.resultText img
+{
+	display: inline;
+	border: none;
+}
+
+.allQuestions
+{
+	font-family: monospace;
+	font-size: 1.15rem;
+	text-align: start;
+	
+}
+
+.btnQ {
+	width: 100px;
+	height: 40px;
+	border: none;
+	background-color: palevioletred;
+	color: black;
 }
 
 
