@@ -1,4 +1,5 @@
 
+
 //Spørgsmålene står her 
 let Q1 = document.querySelector(".Q1");
 let Q2 = document.querySelector(".Q2");
@@ -391,76 +392,76 @@ function C19Fx() {
 	let all = document.querySelector(".resultText");
 	
 	let obj1 = {
-		image: "Alternativet.png",
+		image: "v.png",
 		text: "Venstre V:",
 		val: venstre
 	}
 	let obj2 = {
-		image: "a.jpg",
+		image: "kons.png",
 		text: "Det Konservative Folkeparti C:",
 		val: konservative
 	}
 	let obj3 = {
-		image: "a.jpg",
+		image: "sk.png",
 		text: "Stram kurs P:",
 		val: stramkurs
 	}
 	let obj4 = {
-		image: "a.jpg",
+		image: "a.png",
 		text: "Socialdemokratiet S:",
 		val: socialDemokratiet
 	}
 
 	let obj5 = {
-		image: "a.jpg",
+		image: "alt.png",
 		text: "Alternativet Å:",
 		val: alternativet
 	}
 	
 	let obj6 = {
-		image: "a.jpg",
+		image: "sf.png",
 		text: "SF - Socialitisk Folkeparti F:",
 		val: SF
 	}
 	
 	let obj7 = {
-		image: "a.jpg",
+		image: "rad.png",
 		text: "Radikale Venstre B:",
 		val: radikaleVenstre
 	}
 
 	let obj8 = {
-		image: "a.jpg",
+		image: "a.png",
 		text: "Klaus Riskjær Pedersen E:",
 		val: klausR
 	}
 
 	let obj9 = {
-		image: "a.jpg",
+		image: "la.png",
 		text: "Liberal Alliance I:",
 		val: liberalAlliance
 	}
 
 	let obj10 = {
-		image: "a.jpg",
+		image: "enlist.png",
 		text: "Enhedslisten Ø:",
 		val: enhedesListen
 	}
 
 	let obj11 = {
-		image: "a.jpg",
+		image: "krist.png",
 		text: "Kristendemokraterne K:",
 		val: kristenDemokraterne
 	}
 
 	let obj12 = {
-		image: "a.jpg",
+		image: "nyb.png",
 		text: "Nye Borgerlige D:",
 		val: nyeBorgelige
 	}
 
 	let obj13 = {
-		image: "a.jpg",
+		image: "df.png",
 		text: "Dansk Folkeparti O:",
 		val: danskFolkeparti
 	}
@@ -518,76 +519,76 @@ function C20Fx() {
 
 	let all = document.querySelector(".resultText");
 	let obj1 = {
-		image: "a.jpg",
+		image: "v.png",
 		text: "Venstre V:",
 		val: venstre
 	}
 	let obj2 = {
-		image: "a.jpg",
+		image: "kons.png",
 		text: "Det Konservative Folkeparti C:",
 		val: konservative
 	}
 	let obj3 = {
-		image: "a.jpg",
+		image: "sk.png",
 		text: "Stram kurs P:",
 		val: stramkurs
 	}
 	let obj4 = {
-		image: "a.jpg",
+		image: "a.png",
 		text: "Socialdemokratiet S:",
 		val: socialDemokratiet
 	}
 
 	let obj5 = {
-		image: "a.jpg",
+		image: "alt.png",
 		text: "Alternativet Å:",
 		val: alternativet
 	}
 	
 	let obj6 = {
-		image: "a.jpg",
+		image: "sf.png",
 		text: "SF - Socialitisk Folkeparti F:",
 		val: SF
 	}
 	
 	let obj7 = {
-		image: "a.jpg",
+		image: "rad.png",
 		text: "Radikale Venstre B:",
 		val: radikaleVenstre
 	}
 
 	let obj8 = {
-		image: "a.jpg",
+		image: "krp.png",
 		text: "Klaus Riskjær Pedersen E:",
 		val: klausR
 	}
 
 	let obj9 = {
-		image: "a.jpg",
+		image: "la.png",
 		text: "Liberal Alliance I:",
 		val: liberalAlliance
 	}
 
 	let obj10 = {
-		image: "a.jpg",
+		image: "enlist.png",
 		text: "Enhedslisten Ø:",
 		val: enhedesListen
 	}
 
 	let obj11 = {
-		image: "a.jpg",
+		image: "krist.png",
 		text: "Kristendemokraterne K:",
 		val: kristenDemokraterne
 	}
 
 	let obj12 = {
-		image: "a.jpg",
+		image: "nyb.png",
 		text: "Nye Borgerlige D:",
 		val: nyeBorgelige
 	}
 
 	let obj13 = {
-		image: "a.jpg",
+		image: "df.png",
 		text: "Dansk Folkeparti O:",
 		val: danskFolkeparti
 	}
@@ -639,3 +640,12 @@ function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDe
 	nyeBorgelige = nyeBorgeligePoint + nyeBorgelige;
 	danskFolkeparti = danskFolkepartiPoint + danskFolkeparti;
 }
+
+function schoolProj() {
+	alert("DENNE SIDE ER EN SKOLE PROJEKT!!! THIS PAGE IS A SCHOOL PROJECT!!!");
+  }
+// ACTIVE NAVBAR
+  $(".navItem").on("click", function(e){
+	$("li.navItem").removeClass("active");
+	$(this).addClass("active");
+  });

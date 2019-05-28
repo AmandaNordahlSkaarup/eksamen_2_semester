@@ -8,29 +8,37 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="style/teststyle.css" rel="stylesheet" type="text/css">
 </head>
-	<body>
+	<body onload="schoolProj()">
 	
 
 		
 	<div class="navbar">
   <a href="#partioversigt">Partioversigt</a>
-  <a href="#quiz">Quizzen</a>
+  <a href="#quizBox">Parti test</a>
   <a href="#socialemedier">Sociale medier</a>
   <a href="#APP">APP'en</a>
 </div>	
 		
 
 		<div class="container">
+
+			<div class="con1">
+					<div class="col-12">
+					<img class="img-fluid logo" src="img/logo6.png" alt="logo">
 			
-			<div class="col-12">
-			<img class="img-fluid logo" src="img/logo6.png" alt="logo">
-				<br>
-				<br>
-				<h3>Ved du heller ikke hvad du skal stemme?</h3>
-				<h3>Udforsk de forskellige partier her eller tag en kandidattest, det kan være du bliver kloger på hvad du skal stemme.</h3>
+				<p class="introText">Ved du heller ikke hvad du skal stemme?</p>
+				<p class="introText2">Udforsk de forskellige partier her eller tag en kandidattest, det kan være du bliver kloger på hvad du skal stemme.</p>
+			</div>
+				<div>
+						<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+				<polygon class="" style="fill: rgb(201, 199, 199);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
+				<polygon class="" style="opacity: 1;fill:  #373a39;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
+				<polygon class="" style="opacity: 1;fill:  #8a8a8a;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
+					</div>
+					
 			</div>
 			
-			
+			<div class="con2 partiBubbles">
 <ul id="partioversigt" class="progressbar col-12 col-md-12 col-sm-12">
 	<h1 class="partioversigt">Partioversigt</h1>
 	<p class="partitext">Klik på partierne neden for og læs mere om deres spidskandidat.</p>
@@ -39,7 +47,7 @@
 	</div>
 
 	<div class="popup" onclick="myFunction('myPopup2')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/Radikale.pnpng" alt="logo"><span class="popuptext" id="myPopup2"><img class="persona" src="img/partipersona/b.png" alt="persona"></span> </button></li>
+  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/Radikale.png" alt="logo"><span class="popuptext" id="myPopup2"><img class="persona" src="img/partipersona/b.png" alt="persona"></span> </button></li>
 	</div>
 	
 	<div class="popup1" onclick="myFunction('myPopup3')">
@@ -47,7 +55,7 @@
 	</div>
 	
 	<div class="popup1" onclick="myFunction('myPopup4')">
-	<li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/SF.pnpng" alt="logo"><span class="popuptext1" id="myPopup4"><img class="persona1" src="img/partipersona/f.png" alt="persona1"></span> </button></li>
+	<li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/SF.png" alt="logo"><span class="popuptext1" id="myPopup4"><img class="persona1" src="img/partipersona/f.png" alt="persona1"></span> </button></li>
 	</div>
 
 	<div class="popup" onclick="myFunction('myPopup5')">
@@ -84,11 +92,19 @@
 	
 	<div class="popup" onclick="myFunction('myPopup13')">
   <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/nyborgelige.png" alt="logo"><span class="popuptext" id="myPopup13"><img class="persona" src="img/partipersona/d.png" alt="persona"></span> </button></li>
-	</div>
-					
+	</div>			
 </ul>
+<div>
+		<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+<polygon class="" style="fill: rgb(212, 206, 206);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
+<polygon class="" style="opacity: 1;fill:  #8a8a8a;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
+<polygon class="" style="opacity: 1;fill:  #373a39;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
+	</div>
+</div>
+
 		<!--Her Starter html til Kandidat testen-->	
-<div class="quizBox">
+		<div class="con3">
+<div id="quizBox" class="col-12" >
 	<h1 class="quizTitel">Parti test</h1>
 	
 	<p class="partiTestP">Med vores partitest kan du få en ide om hvilken parti du skal stemme på til kommende folketingsvalg.</p>
@@ -178,29 +194,17 @@
 	<div class="resultText">
 					</div>
 	</div>
+	<div>
+			<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+	<polygon class="" style="fill: rgb(176, 228, 217);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
+	<polygon class="" style="opacity: 1;fill:  #8dc4b9;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
+	<polygon class="" style="opacity: 1;fill:  #53837c;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
+		</div>
+</div>
 	
 	<!--Kandidat test SLUT-->	
-	
-  <div id="socialemedier" class="social">
-	  <h1 class="so-overskrift">Vores sociale medier</h1>
-		<!--<p class="so-text">Følg med om valget på vores sociale medier.</p>-->
-    <div class="col-sm-2">
-		<a href="https://www.facebook.com/SÆT-X-2190450821036111/" target="_blank"> 
-      <img class="img-fluid so-img" src="img/socialmedia/facebook.png" alt="social">
-   </a> 
-	  </div>
-    <div class="col-sm-2">
-		<a href="https://www.instagram.com/saetkrydset/?hl=da" target="_blank">
-      <img class="img-fluid so-img" src="img/socialmedia/instagram.png" alt="social">
-    </a>
-	  </div>
-    <div class="col-sm-2">
-		<a href="https://twitter.com/Krydset_" target="_blank">
-      <img class="img-fluid so-img" src="img/socialmedia/twitter.png" alt="social">
-    </a>
-	</div>
-  </div>
-			
+
+			<div class="con4">
 			<div id="APP" class="col-12">
 			<h1 class="appen">Vores APP</h1>
 				<video class="reklamefilm" controls src="video/sætXreklame.mp4"></video>
@@ -218,8 +222,38 @@
 			<button class="download-play info">Banner</button>
 			</a>
 			</div>
-			
 			</div>
+			<div>
+					<div>
+							<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+					<polygon class="" style="fill: rgb(118, 92, 180);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
+					<polygon class="" style="opacity: 1;fill: rgb(84, 70, 114);" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
+					<polygon class="" style="opacity: 1;fill: rgb(159, 144, 192);" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
+						</div>
+			</div>
+		</div>
+
+			<div class="con5">
+			<div id="socialemedier" class="social">
+					<h1 class="so-overskrift">Vores sociale medier</h1>
+					<!--<p class="so-text">Følg med om valget på vores sociale medier.</p>-->
+					<div class="col-sm-2">
+					<a href="https://www.facebook.com/SÆT-X-2190450821036111/" target="_blank"> 
+						<img class="img-fluid so-img" src="img/socialmedia/facebook.png" alt="social">
+				 </a> 
+					</div>
+					<div class="col-sm-2">
+					<a href="https://www.instagram.com/saetkrydset/?hl=da" target="_blank">
+						<img class="img-fluid so-img" src="img/socialmedia/instagram.png" alt="social">
+					</a>
+					</div>
+					<div class="col-sm-2">
+					<a href="https://twitter.com/Krydset_" target="_blank">
+						<img class="img-fluid so-img" src="img/socialmedia/twitter.png" alt="social">
+					</a>
+				</div>
+			</div>
+				</div>
 			
 			
 			
