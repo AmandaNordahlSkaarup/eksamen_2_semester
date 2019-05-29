@@ -641,6 +641,8 @@ function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDe
 	danskFolkeparti = danskFolkepartiPoint + danskFolkeparti;
 }
 
+
+// Lille funktion der viser at vi er en skoleopgave og ikke et dårlig nyhedssite. 
 function schoolProj() {
 	alert("DENNE SIDE ER EN SKOLE PROJEKT!!! THIS PAGE IS A SCHOOL PROJECT!!!");
   }
