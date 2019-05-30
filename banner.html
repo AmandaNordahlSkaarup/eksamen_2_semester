@@ -9,7 +9,7 @@
 <link href="style/teststyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body onLoad="addBlock()">
 
 <div class="container">
     
@@ -36,6 +36,16 @@
                 
             </div>
 </div>
+	
+	<script>
+	// Lille funktion der viser at vi er en skoleopgave og ikke et dårlig nyhedssite. 
+function addBlock() {
+	alert("Husk at fjerne AddBlock, for at siden virker!");
+  }
+	
+	</script>
+	
+	
 </body>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

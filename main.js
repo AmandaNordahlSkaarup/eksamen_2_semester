@@ -642,12 +642,8 @@ function beregnStemmer(venstrePoint, konservativePoint, stramkursPoint, socialDe
 }
 
 
-// Lille funktion der viser at vi er en skoleopgave og ikke et dårlig nyhedssite. 
-function schoolProj() {
-	alert("DENNE SIDE ER EN SKOLE PROJEKT!!! THIS PAGE IS A SCHOOL PROJECT!!!");
-  }
 // ACTIVE NAVBAR
-  $(".navItem").on("click", function(e){
-	$("li.navItem").removeClass("active");
-	$(this).addClass("active");
-  });
+ // $(".navItem").on("click", function(e){
+//	$("li.navItem").removeClass("active");
+//	$(this).addClass("active");
+ // }); 

@@ -34,22 +34,25 @@ body h1 {
 
 .con1 {
   margin-bottom: -20px;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(240, 255, 240, 0.1);
 }
 
 .con2 {
-  background-color: rgb(201, 199, 199);
+  background-color: rgb(240, 255, 240, 0.1);
 }
 
 .con3 {
-  background-color: rgb(212, 206, 206);
+  background-color: rgb(240, 255, 240, 0.1);
 }
 
 .con4 {
-  background-color: rgb(176, 228, 217);
+  background-color: rgb(240, 255, 240, 0.1);
 }
 .con5 {
-  background-color: rgb(118, 92, 180);
+  background-color: rgb(240, 255, 240, 0.1);
+}
+.con6 {
+  background-color: rgb(240, 255, 240, 0.1);
 }
 
 
@@ -312,7 +315,9 @@ justify-content: center;
 
 /*GRAFIK*/
 .img-grafik {
-	width: 100%;
+	width: 75%;
+	display: block;
+	margin: auto;
 }
 
 
