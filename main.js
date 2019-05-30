@@ -480,19 +480,14 @@ function C19Fx() {
 
 
 	arr = arr.filter(function (number) {
-		return number.val > 18;
+		return number.val > 20;
 	});
 
 	let htmlArray = arr.map((e) => {
 		return  '<img src="'+e.image+'">' + '\xa0\xa0\xa0\xa0\xa0' + e.text + " " + e.val + "<br>"
 	}).join("")
 
-	
-	
-	
-	/*/function points(htmlArray) {
-		return htmlArray.val >= 20;
-}/**/
+
 
 	all.innerHTML = htmlArray
 }
