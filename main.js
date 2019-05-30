@@ -598,7 +598,7 @@ function C20Fx() {
 	let arr = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13]
 
 	  arr = arr.filter(function (number) {
-		return number.val > 18 ;
+		return number.val > 20;
 	  });
 
 
