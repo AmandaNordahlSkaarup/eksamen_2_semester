@@ -386,8 +386,6 @@ function C19Fx() {
 	Q2.style.display = "none";
 	Q1.style.display = "none";
 	beregnStemmer(4, 4, 0, 5, 5, 5, 5, 3, 3, 5, 2, 0, 3);
-	 
-
 	
 	let all = document.querySelector(".resultText");
 	
@@ -468,8 +466,6 @@ function C19Fx() {
 	
 
 	let arr = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13]
-    	
-	
 	
 	function compare(a, b) {
 		if (a.val > b.val) {
@@ -484,10 +480,8 @@ function C19Fx() {
 
 
 	arr = arr.filter(function (number) {
-		return number.val > 18 ;
-	  });
-	
-
+		return number.val > 18;
+	});
 
 	let htmlArray = arr.map((e) => {
 		return  '<img src="'+e.image+'">' + '\xa0\xa0\xa0\xa0\xa0' + e.text + " " + e.val + "<br>"
@@ -611,9 +605,7 @@ function C20Fx() {
 		}
 		return 0;
 	}
-	arr.sort(compare);
-
-	 
+	arr.sort(compare); 
 	
 	let htmlArray = arr.map((e) => {
 		return '<img src="'+e.image+'">' + '\xa0\xa0' + e.text + " " + e.val + "<br>"
