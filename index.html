@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<meta name=”description” content=”Sæt X’et hjælper dig med at tage den bedste beslutning når du skal sætte dit kryds. Vi giver dig vigtig information om alle partierne, så du kan lave et informeret kryds til folketingsvalget 2019.”>
+	<meta name="description" content="Sæt Xet hjælper dig med at tage den bedste beslutning når du skal sætte dit kryds. Vi giver dig vigtig information om alle partierne, så du kan lave et informeret kryds til folketingsvalget 2019.">
 	
-	<meta name=”keywords” content=”Lær om politik og folketingsvalget”>
+	<meta name="keywords" content="Lær om politik og folketingsvalget">
 	
 
 <title>Sæt krydset til folketingsvalget 2019</title>
@@ -39,7 +39,7 @@
 				<p class="introText2">Udforsk de forskellige partier her eller tag en kandidattest, det kan være du bliver kloger på hvad du skal stemme.</p>
 			</div>
 				<div>
-						<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+						<svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 				<polygon class="" style="fill: rgb(201, 199, 199);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
 				<polygon class="" style="opacity: 1;fill:  #373a39;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
 				<polygon class="" style="opacity: 1;fill:  #8a8a8a;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
@@ -48,66 +48,86 @@
 			</div>
 			
 			<div class="con2 partiBubbles">
-<ul id="partioversigt" class="progressbar col-12 col-md-12 col-sm-12">
-	<h1 class="partioversigt">Partioversigt</h1>
+				<h1 class="partioversigt">Partioversigt</h1>
 	<p class="partitext">Klik på partierne neden for og læs mere om deres spidskandidat.</p>
-	<div class="popup" onclick="myFunction('myPopup')"> 
+<ul id="partioversigt" class="progressbar col-12 col-md-12 col-sm-12">
+	
+	
 	
 	<!-- under diven er der diffineret onclick(myPopup) som stemmer over ens med span id'et, dette er gældene på alle iconer for parlementerne. id'erne er forskellige da et ide ikke må være ens --> 
 		
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/Alternativet.png" alt="Logo for partiet Alternativet"><span class="popuptext" id="myPopup"><img class="persona" src="img/partipersona/å.png" alt="billede og tekst om partiet Alternativet"></span> </button></li>
-	</div>
+  <li class="active">
+	  <div class="popup" onclick="myFunction('myPopup')"> 
+	   <img class="avatar" src="img/Partilogoer/Alternativet.png" alt="Logo for partiet Alternativet"><span class="popuptext" id="myPopup"><img class="persona" src="img/partipersona/å.png" alt="billede og tekst om partiet Alternativet"></span>
+		  </div>
+		  </li>
+	
+  <li class="active">
+	  <div class="popup" onclick="myFunction('myPopup2')">
+	   <img class="avatar" src="img/Partilogoer/Radikale.png" alt="Logo for partiet Radikale Venstre"><span class="popuptext" id="myPopup2"><img class="persona" src="img/partipersona/b.png" alt="persona"></span>
+	</div></li>
+	
+	
+  <li class="active">
+	  <div class="popup1" onclick="myFunction('myPopup3')"><img class="avatar" src="img/Partilogoer/enhedslistenlogo.png" alt="Logo for partiet Enhedslisten"><span class="popuptext1" id="myPopup3"><img class="persona1" src="img/partipersona/ø.png" alt="billede og tekst om partiet Enhedslisten"></span></div> </li>
+	
+	
+	
+	<li class="active">
+		<div class="popup1" onclick="myFunction('myPopup4')"> <img class="avatar" src="img/Partilogoer/SF.png" alt="Logo for partiet SF"><span class="popuptext1" id="myPopup4"><img class="persona1" src="img/partipersona/f.png" alt="billede og tekst om partiet SF"></span> 
+		</div>
+	</li>
 
-	<div class="popup" onclick="myFunction('myPopup2')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/Radikale.png" alt="Logo for partiet Radikale Venstre"><span class="popuptext" id="myPopup2"><img class="persona" src="img/partipersona/b.png" alt="persona"></span> </button></li>
-	</div>
 	
-	<div class="popup1" onclick="myFunction('myPopup3')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/enhedslistenlogo.png" alt="Logo for partiet Enhedslisten"><span class="popuptext1" id="myPopup3"><img class="persona1" src="img/partipersona/ø.png" alt="billede og tekst om partiet Enhedslisten"></span> </button></li>
+  <li class="active">
+	  <div class="popup" onclick="myFunction('myPopup5')"><img class="avatar" src="img/Partilogoer/socialdemokratiet.png" alt="Logo for partiet Socialdemokratiet"><span class="popuptext" id="myPopup5"><img class="persona" src="img/partipersona/a.png" alt="billede og tekst om partiet Socialdemokratiet"></span> 
 	</div>
+  </li>
 	
-	<div class="popup1" onclick="myFunction('myPopup4')">
-	<li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/SF.png" alt="Logo for partiet SF"><span class="popuptext1" id="myPopup4"><img class="persona1" src="img/partipersona/f.png" alt="billede og tekst om partiet SF"></span> </button></li>
+	
+  <li class="active">
+	  <div class="popup" onclick="myFunction('myPopup6')"><img class="avatar" src="img/Partilogoer/kristendemokraterne.png" alt="Logo for partiet Kristendemokratiet"><span class="popuptext" id="myPopup6"><img class="persona" src="img/partipersona/k.png" alt="billede og tekst om partiet Kristendemokraterne"></span>
 	</div>
+  </li>
+	
 
-	<div class="popup" onclick="myFunction('myPopup5')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/socialdemokratiet.png" alt="Logo for partiet Socialdemokratiet"><span class="popuptext" id="myPopup5"><img class="persona" src="img/partipersona/a.png" alt="billede og tekst om partiet Socialdemokratiet"></span> </button></li>
-	</div>
-	
-	<div class="popup" onclick="myFunction('myPopup6')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/kristendemokraterne.png" alt="Logo for partiet Kristendemokratiet"><span class="popuptext" id="myPopup6"><img class="persona" src="img/partipersona/k.png" alt="billede og tekst om partiet Kristendemokraterne"></span> </button></li>
-	</div>
-	
-	<div class="popup1" onclick="myFunction('myPopup7')">
-		<li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/klaus_riskjaer_pedersen.png" alt="Logo for partiet Klaus Riskær Pedersen"><span class="popuptext1" id="myPopup7"><img class="persona1" src="img/partipersona/e.png" alt="billede og tekst om partiet Klaus Riskær Pedersen"></span> </button></li>
-	</div>
+	<li class="active">
+		<div class="popup1" onclick="myFunction('myPopup7')"><img class="avatar" src="img/Partilogoer/klaus_riskjaer_pedersen.png" alt="Logo for partiet Klaus Riskær Pedersen"><span class="popuptext1" id="myPopup7"><img class="persona1" src="img/partipersona/e.png" alt="billede og tekst om partiet Klaus Riskær Pedersen"></span>
+		</div>
+	</li>
 
-	<div class="popup1" onclick="myFunction('myPopup8')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/konservative.png" alt="Logo for partiet Konservative"><span class="popuptext1" id="myPopup8"><img class="persona1" src="img/partipersona/c.png" alt="billede og tekst om partiet Konservative"></span> </button></li>
-	</div>
 	
-	<div class="popup" onclick="myFunction('myPopup9')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/liberalalliance.png" alt="Logo for partiet Liberal Alliance"><span class="popuptext" id="myPopup9"><img class="persona" src="img/partipersona/i.png" alt="billede og tekst om partiet Liberal Alliance"></span> </button></li>
+  <li class="active">
+	  <div class="popup1" onclick="myFunction('myPopup8')"><img class="avatar" src="img/Partilogoer/konservative.png" alt="Logo for partiet Konservative"><span class="popuptext1" id="myPopup8"><img class="persona1" src="img/partipersona/c.png" alt="billede og tekst om partiet Konservative"></span>
 	</div>
+  </li>
 	
-	<div class="popup" onclick="myFunction('myPopup10')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/Venstre.png" alt="Logo for partiet Venstre"><span class="popuptext" id="myPopup10"><img class="persona" src="img/partipersona/v.png" alt="billede og tekst om partiet Venstre"></span> </button></li>
-	</div>
 	
-	<div class="popup1" onclick="myFunction('myPopup11')">
-		<li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/StramKurs.png" alt="Logo for partiet Stram Kurs"><span class="popuptext1" id="myPopup11"><img class="persona1" src="img/partipersona/p.png" alt="billede og tekst om partiet Stram Kurs"></span> </button></li>
+  <li class="active">
+	  <div class="popup" onclick="myFunction('myPopup9')"><img class="avatar" src="img/Partilogoer/liberalalliance.png" alt="Logo for partiet Liberal Alliance"><span class="popuptext" id="myPopup9"><img class="persona" src="img/partipersona/i.png" alt="billede og tekst om partiet Liberal Alliance"></span>
 	</div>
+	</li>
+	
 
-	<div class="popup1" onclick="myFunction('myPopup12')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/DF.png" alt="Logo for partiet Dansk Folkeparti"><span class="popuptext1" id="myPopup12"><img class="persona1" src="img/partipersona/o.png" alt="Billede og tekst om partiet Dansk Folkeparti"></span> </button></li>
+  <li class="active">
+	  <div class="popup" onclick="myFunction('myPopup10')"><img class="avatar" src="img/Partilogoer/Venstre.png" alt="Logo for partiet Venstre"><span class="popuptext" id="myPopup10"><img class="persona" src="img/partipersona/v.png" alt="billede og tekst om partiet Venstre"></span> 
 	</div>
+	</li>
 	
-	<div class="popup" onclick="myFunction('myPopup13')">
-  <li class="active"><button class="parti-btn" type = "button"> <img class="avatar" src="img/Partilogoer/nyborgelige.png" alt="Logo for partiet Nye Borgerlige"><span class="popuptext" id="myPopup13"><img class="persona" src="img/partipersona/d.png" alt="billede og tekst om partiet Nye Borgerlige"></span> </button></li>
-	</div>			
+		<li class="active"><div class="popup1" onclick="myFunction('myPopup11')"><img class="avatar" src="img/Partilogoer/StramKurs.png" alt="Logo for partiet Stram Kurs"><span class="popuptext1" id="myPopup11"><img class="persona1" src="img/partipersona/p.png" alt="billede og tekst om partiet Stram Kurs"></span>
+	</div>
+	</li>
+			
+  <li class="active"><div class="popup1" onclick="myFunction('myPopup12')"><img class="avatar" src="img/Partilogoer/DF.png" alt="Logo for partiet Dansk Folkeparti"><span class="popuptext1" id="myPopup12"><img class="persona1" src="img/partipersona/o.png" alt="Billede og tekst om partiet Dansk Folkeparti"></span> 
+	</div>
+	</li>
+	
+	
+  <li class="active"><div class="popup" onclick="myFunction('myPopup13')"> <img class="avatar" src="img/Partilogoer/nyborgelige.png" alt="Logo for partiet Nye Borgerlige"><span class="popuptext" id="myPopup13"><img class="persona" src="img/partipersona/d.png" alt="billede og tekst om partiet Nye Borgerlige"></span> 
+	</div></li>			
 </ul>
 <div>
-		<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+		<svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 <polygon class="" style="fill: rgb(212, 206, 206);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
 <polygon class="" style="opacity: 1;fill:  #8a8a8a;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
 <polygon class="" style="opacity: 1;fill:  #373a39;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
@@ -207,7 +227,7 @@
 					</div>
 	</div>
 	<div>
-			<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+			<svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 	<polygon class="" style="fill: rgb(176, 228, 217);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
 	<polygon class="" style="opacity: 1;fill:  #8dc4b9;" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
 	<polygon class="" style="opacity: 1;fill:  #53837c;" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
@@ -235,19 +255,19 @@
 				<div class="app-btn">
 					<p>Download vores APP ved at klikke på knappen nedenfor.</p>
 			<a href="https://xd.adobe.com/view/387a74d1-ecbd-42fa-69ef-add66b8324ef-4e4b/" target="_blank">
-			<button class="download-app info">AppStore</button>
+			<div class="download-app info col-2">AppStore</div>
 			</a>
 			<a href="https://xd.adobe.com/view/387a74d1-ecbd-42fa-69ef-add66b8324ef-4e4b/" target="_blank">
-			<button class="download-play info">GooglePlay</button>
+			<div class="download-play info col-2">GooglePlay</div>
 			</a>
 			<a href="banner.html" target="_blank">
-			<button class="download-play info">Banner</button>
+			<div class="download-play info col-2">Banner</div>
 			</a>
 			</div>
 			</div>
 			<div>
 					<div>
-							<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+							<svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep4" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 					<polygon class="" style="fill: rgb(118, 92, 180);" points="886,86 800,172 714,86 -4,86 -4,204 1604,204 1604,86 "></polygon> 
 					<polygon class="" style="opacity: 1;fill: rgb(84, 70, 114);" points="800,172 886,86 900,86 800,186 700,86 714,86 "></polygon> 
 					<polygon class="" style="opacity: 1;fill: rgb(159, 144, 192);" points="800,162 876,86 888,86 800,174 712,86 724,86 "></polygon></svg>
