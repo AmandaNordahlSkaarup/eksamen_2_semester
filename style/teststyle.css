@@ -129,7 +129,7 @@ body h1 {
 }
 
 .partitext {
-	text-align: center;
+	
   padding-bottom: 10px;
   font-size: 1.15rem;
 	padding: 0px 120px;
@@ -263,7 +263,7 @@ justify-content: center;
 }
 
 .partiTestP{
-	text-align: center;
+	
 	font-size: 1.15rem;
 	padding: 0 120px;
 }
@@ -378,6 +378,12 @@ justify-content: center;
 
 .download {
 	text-align: center;
+	padding: 10px 120px;
+}
+
+.app-toptext {
+	
+	padding: 0 120px;
 }
 
 .info {
