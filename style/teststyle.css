@@ -108,7 +108,8 @@ body h1 {
 .introText {
   font-size: 1.18rem;
   text-align: center;
-  padding: 0 110px;
+  
+  
 }
 
 
@@ -131,7 +132,7 @@ body h1 {
 	
   padding-bottom: 10px;
   font-size: 1.15rem;
-	padding: 0px 120px;
+
 }
 
 .avatar {
@@ -245,11 +246,20 @@ justify-content: center;
 		margin-left: -100px; 
 		
 	}
-}
-
-@media screen and (max-width: 900px) {
 	.popup1 .popuptext1 {
 		margin-left: -440px; 
+	}
+	
+	.so-img {
+		width: 500px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	
+	
+	.resultText {
+		text-align: start;
 	}
 }
 
@@ -264,16 +274,15 @@ justify-content: center;
 .partiTestP{
 	
 	font-size: 1.15rem;
-	padding: 0 120px;
+	
 }
 
 .resultText
 {
   margin-top: -50px; 
-	padding-left: 300px;
   font-size: 1.8rem;
   letter-spacing: 3px;
-	text-align: start;
+	
 	z-index: 3;
 }
 
@@ -377,13 +386,10 @@ justify-content: center;
 
 .download {
 	text-align: center;
-	padding: 10px 120px;
+	
 }
 
-.app-toptext {
-	
-	padding: 0 120px;
-}
+
 
 .info {
   border: 2px solid black;
