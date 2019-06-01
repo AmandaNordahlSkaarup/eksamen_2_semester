@@ -226,7 +226,7 @@ justify-content: center;
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+  animation: fadeIn 1s;
 }
 
 .popup1 .show {
@@ -234,6 +234,8 @@ justify-content: center;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
+
+
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
@@ -248,20 +250,25 @@ justify-content: center;
 
 @media screen and (max-width: 900px) {
 	.popup .popuptext {
-		margin-left: -100px; 
-		
+    margin-left: -240px; 
 	}
 	.popup1 .popuptext1 {
-		margin-left: -440px; 
-	}
-	
+		margin-left: -420px; 
+  }
+
+  .persona {
+    display: block;
+    margin: 150px; 
+    width: 300px;
+  
+  }
+  
 	.so-img {
 		width: 500px;
 	}
 }
 
 @media screen and (min-width: 900px) {
-	
 	
 	.resultText {
 		text-align: start;
@@ -287,7 +294,6 @@ justify-content: center;
   margin-top: -50px; 
   font-size: 1.8rem;
   letter-spacing: 3px;
-	
 	z-index: 3;
 }
 
