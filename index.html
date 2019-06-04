@@ -2,6 +2,8 @@
 <html id="back" lang="da"> 
 <head>
 <meta charset="utf-8">
+	
+	<!-- viewport: responsive til mobil, desciption: når man søger på google, keywords: ord der binder søgninger på google til vores side, Google-site-verification: google godkendelse.-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Sæt Xet hjælper dig med at tage den bedste beslutning når du skal sætte dit kryds. Vi giver dig vigtig information om alle partierne, så du kan lave et informeret kryds til folketingsvalget 2019.">
 	<meta name="keywords" content="Lær om politik og folketingsvalget">
@@ -11,23 +13,27 @@
 	
 	<!--GOOGLE FONT - MONTSERRAT-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	
+	<!-- bootstrap style -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- eget style -->
 <link href="style/teststyle.css" rel="stylesheet" type="text/css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141201413-1"></script>
-<script>
+<!-- google analytic -->
+	<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-141201413-1');
 </script>
-<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<!-- ivon til fanebladet -->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
+	<!-- alert på siden -->
 	<body onload="schoolProj()">
 	
-
+<!-- her starter navigations baren -->
 	<div class="row">
 	<div class="navbar .navbar-fixed">
   <a href="#partioversigt">Partioversigt</a>
@@ -36,17 +42,23 @@
   <a href="#APP">APP'en</a>
 	</div>	
 </div>
+		<!-- Navigationsbar slut -->
+		
+		
+		<!-- start på alt indhold på siden -->
 		<div class="container">
 
+				<!-- intro start med logo -->
 			<div class="con1">
 					<div class="col-12">
 					<img class="img-fluid logo" src="img/logo6.png" alt="logo for sæt krydset">
 			<div class="mr-auto ml-auto col-lg-8 col-sm-12 col-md-10">
 				<p class="introText">Ved du heller ikke hvad du skal stemme?</p>
-				<p class="introText">For at hjælpe dig på vej har vi udviklet en hjemmeside der kan hjælpe dig. kig rundt på vores hjemmeside og bliv lidt kloger på, hvad du skal stemme.</p>
+				<p class="introText">For at hjælpe dig på vej har vi udviklet en hjemmeside der kan hjælpe dig. Kig rundt på vores hjemmeside og bliv lidt klogere på, hvad du skal stemme.</p>
 			</div>
 				</div>
 			<div>
+				<!-- vores opdeling af siderne -->
     <svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 <polygon class="" style="fill: rgb(240, 255, 240, 0.01);" points="-4,0 1604,198 1604,204 -4,204 	"></polygon>
 <polygon class="" style="opacity: 1;fill: #3E4D81;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>
@@ -55,18 +67,19 @@
 					
 			</div>
 			
+			<!-- intro slut -->
+			
+			<!-- partioversigt start -->
 			<div class="con2 partiBubbles">
 				<h1 id="partioversigt" class="partioversigt">Partierne</h1>
 	<p class="partitext mr-auto ml-auto col-lg-8 col-md-10 col-sm-12 ">Udforsk de forskellige partier her eller tag en kandidattest, det kan være du bliver kloger på hvad du skal stemme. For at hjælpe på vej med at lærer mere om partierne, kan du klikke på ikonerne nedenfor og når du er færdig med at læse om spidskandidaten, så klik igen for at lukke vinduet igen.</p>
 <ul class="progressbar col-12 col-md-12 col-sm-12">
 	
 	
-	
-	<!-- under diven er der diffineret onclick(myPopup) som stemmer over ens med span id'et, dette er gældene på alle iconer for parlementerne. id'erne er forskellige da et ide ikke må være ens --> 
-		
-  <li class="active">
+  <li class="active"> <!-- hver parti er inddelt i en class med "active" -->
+	  <!-- under diven er der diffineret onclick(myPopup) som stemmer over ens med span id'et, dette er gældene på alle iconer for parlementerne. id'erne er forskellige da et ide ikke må være ens -->
 	  <div class="popup" onclick="myFunction('myPopup')"> 
-	   <img class="avatar" src="img/Partilogoer/Alternativet.png" alt="Logo for partiet Alternativet"><span class="popuptext" id="myPopup"><img class="persona" src="img/partipersona/å.png" alt="billede og tekst om partiet Alternativet"></span>
+	   <img class="avatar" src="img/Partilogoer/Alternativet.png" alt="Logo for partiet Alternativet"><span class="popuptext" id="myPopup"><img class="persona" src="img/partipersona/å.png" alt="billede og tekst om partiet Alternativet"></span> <!-- det img der ligger inde i 'span' er det billede der popper op når man kligger på partiets logo -->
 		  </div>
 		  </li>
 	
@@ -135,13 +148,14 @@
 	</div></li>			
 </ul>
 <div>
+	<!-- vores opdeling af siden -->
     <svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 <polygon class="" style="fill: rgb(240, 255, 240, 0.01);" points="-4,0 1604,198 1604,204 -4,204 	"></polygon>
 <polygon class="" style="opacity: 1;fill: #3E4D81;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>
 <polygon class="" style="opacity: 1;fill: #56739F;" points="1604,186 1604,174 -4,0 -4,0 	"></polygon></svg>
   </div>
 </div>
-
+<!-- slut partiovergigt -->
 		<!--Her Starter html til Kandidat testen-->	
 		<div class="con3">
 <div id="quizBox" class="col-12" >
@@ -231,10 +245,12 @@
 							<button class="C20 btnQ">Nej</button>
 			</div>
 	</div>
+	<!-- classen der diffinere style på resultaterne fra testen -->
 	<div class="resultText col-lg-12 col-md-12 mr-auto ml-auto">
 					</div>
 	</div>
 	<div>
+		<!-- opdeling af siden -->
     <svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 <polygon class="" style="fill: rgb(240, 255, 240, 0.01);" points="-4,0 1604,198 1604,204 -4,204 	"></polygon>
 <polygon class="" style="opacity: 1;fill: #3E4D81;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>
@@ -242,8 +258,9 @@
   </div>
 </div>
 	
-	<!--Kandidat test SLUT-->	
+	<!--Kandidat test SLUT-->
 			
+			<!-- grafig start -->
 			<div class="con6">
 			<div id="grafik" class="col-lg-12 col-md-12 ">
 				<h1 class="grafik">Grafik info</h1>
@@ -251,6 +268,7 @@
 				</div>
 				
 				<div>
+					<!-- opdeling af siden -->
     <svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 <polygon class="" style="fill: rgb(236, 240, 241, 0.01);" points="-4,0 1604,198 1604,204 -4,204 	"></polygon>
 <polygon class="" style="opacity: 1;fill: #3E4D81;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>
@@ -258,18 +276,21 @@
   </div>
 				
 			</div>
+			<!-- grafik slut -->
 			
-			
-			
+			<!-- APP og reklamefilm start -->
 
 			<div class="con4">
 			<div id="APP" class="col-12">
 			<h1 class="appen">Vores APP</h1>
 				<p class="app-toptext mr-auto ml-auto col-lg-8 col-md-10 col-sm-12">Se vores video nedenfor og lær mere om vores nye APP, hvor du frit kan lære mere om valget, hver gang du render ind i en valg plakat, om det er på løbeturen, når du er ude og lufte hunden, uanset hvornår, er det bare at finde APPen frem. Det er simpelt: Åben APPen scan valgplakaten, tryk på kandidaten og hør mere om deres politik. Hvis det ikke er nok har du også mulighed for at chatte med kandidaterne.</p>
+				<!-- vores reklamefilm til appen -->
 				<video class="reklamefilm col-lg-8 col-md-10 col-sm-12" controls poster="img/logo6.png" src="video/sætXreklame.mp4"></video>
 		
 				<p class="download mr-auto ml-auto col-lg-8 col-md-10 col-sm-12">Nu er det din tur til at komme ud og igang, og blive klogere på valget. Download APPen nedenfor og find ud af hvem du skal stemme på til folketingsvalget.</p>
-			<div class="row">
+			
+			<!-- knapperne under filmen med download og vores banner -->
+			<div class="row app-afstand">
     			<div class="col-sm">
      				<a href="https://xd.adobe.com/view/387a74d1-ecbd-42fa-69ef-add66b8324ef-4e4b/" target="_blank">
 			<div class="download-app info">AppStore</div>
@@ -286,17 +307,10 @@
 			</a>
     			</div>
   			</div>
-				
-				
-				<div class="app-btn">
-					
-			
-			
-			
-			</div>
 			</div>
 			<div>
 					<div>
+						<!-- opdeling af siden -->
     <svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
 <polygon class="" style="fill: rgb(240, 255, 240, 0.01);" points="-4,0 1604,198 1604,204 -4,204 	"></polygon>
 <polygon class="" style="opacity: 1;fill: #3E4D81;" points="1604,198 1604,186 -4,0 -4,0 	"></polygon>
@@ -304,11 +318,12 @@
   </div>
 			</div>
 		</div>
-
+			<!-- app og reklamefilm slut -->
+			<!-- sociale medie start -->
 			<div class="con5">
 			<div id="socialemedier" class="social">
 					<h1 class="so-overskrift">Vores sociale medier</h1>
-					<!--<p class="so-text">Følg med om valget på vores sociale medier.</p>-->
+					
 					<div class="col-lg-2 col-md-2 col-sm-2">
 					<a href="https://www.facebook.com/SÆT-X-2190450821036111/" target="_blank"> 
 						<img class="img-fluid so-img" src="img/socialmedia/facebook.png" alt="Ikon for Facebook">
@@ -326,24 +341,27 @@
 				</div>
 			</div>
 				</div>
-			
+			<!-- sociale medie slut -->
 			
 			
 		</div>	
-	 
+	 <!-- footer start -->
 	<div class="footer">
 		<div class="copy">
-			 copyright &copy; SÆT X'et 2019
+			 Copyright &copy; SÆT X'et 2019
 		</div>
 		<div class="links">
 			Mail: krydset@mail.com
 		</div>
-	  </div>		
+	  </div>
+		<!-- footer slut -->
+		<!-- til toppen start -->
 	<div>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>		
 </div>
+		<!-- til toppen slut -->
 		
-		
+		<!-- script til partioversigt -->
 		<script>
 // When the user clicks on <div>, open the popup
 			//under function er der diffineret myFunction(id) som gør at det er et uspicifikt id men hvor vi derimod i vores <div> diffinere den enkelte id der skal poppeup
@@ -352,7 +370,9 @@ function myFunction(id) {
   popup.classList.toggle("show");
 }
 </script>
+		<!-- script til partioversigt slut -->
 	
+		<!-- script til scroll funktion -->
 	<script>
 		// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -371,7 +391,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 		</script>
+		<!-- scroll funktion slut -->
 		
+		<!-- alert -->
 <script>
 // Lille funktion der viser at vi er en skoleopgave og ikke et dårlig nyhedssite. 
 function schoolProj() {
@@ -380,6 +402,7 @@ function schoolProj() {
 </script>		
 	
 		
+		<!-- script til bootstrap -->
 	
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

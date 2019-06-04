@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   }
-html {
+html { /*baggrunden*/
   background: url(../img/baggrund.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,11 +13,11 @@ scroll-behavior: smooth;
 }
 
 body {
-  background-color: transparent;
+  background-color: transparent; /*at baggrunden er synlig*/
 }
 body h1 {
-  font-weight: 100;
-  text-align: center;
+  font-weight: 100; /*skrift tykkelse*/
+  text-align: center; 
   text-transform: uppercase;
   letter-spacing: 3px;
 	font-family: 'Montserrat', sans-serif;
@@ -25,16 +25,16 @@ body h1 {
 
 .background {
 	display: flex;
-	position: fixed;
+	position: fixed; /*at baggrunden følger med*/
 	padding: none;
 	background: repeat;
 }
 
-.container {
+.container { 
 }
 /* SIDE SKILDERNE*/
 
-.con1 {
+.con1 { /* overlappende baggrund*/
   margin-bottom: -20px;
   background-color: rgb(240, 255, 240, 0.1);
 }
@@ -69,7 +69,7 @@ body h1 {
 	padding-top: 50px
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { /*responsive design til logo */
 	.header-logo {
 		width: 50%;		
 	}
@@ -82,12 +82,12 @@ body h1 {
   overflow: hidden;
   background: #333333;
   display: block;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed; /* får navbaren til at følge med ned */
+  top: 0; /* placere navbaren i toppen */
   margin-bottom: 400px;
   margin-left: 14px;
-  width: 100%; /* Full width */
-  z-index: 99;
+  width: 100%; /* fuld bredte */
+  z-index: 99; /*placere navbaren foran alt på siden*/
 }
 
 /* Links inside the navbar */
@@ -123,27 +123,24 @@ body h1 {
 
 
 /*PARTIOVERSIGT*/
-.exText {
-  padding-top: 500px; 
-}
 
 .partiBubbles {
-  margin-top: 20px;
+  margin-top: 20px; /*angiver margin på baggrunden bag partioversigten*/
   margin-bottom: 0px;
 }
 .partioversigt{
-	padding-bottom: 20px;
+	padding-bottom: 20px; /*padding mellem overskrift og partierne*/
 	padding-top: 50px;
 }
 
-.partitext {
+.partitext { /*teksten til partioverisgen*/
 	
   padding-bottom: 10px;
   font-size: 1.15rem;
 
 }
 
-.avatar {
+.avatar { /*style på logoerne*/
   vertical-align: middle;
   width: 50px;
   height: 50px;
@@ -151,20 +148,14 @@ body h1 {
   
 }
 
-.parti-btn {
-	border-radius: 50%;
-	padding: 4px;
-	background-color: transparent;
-}
-
-.progressbar {
+.progressbar { /* det generelle style på partioversigten*/
   margin-top: 20px;
   padding: 2% 2% 40px;
 justify-content: center;
 margin-bottom: 300px;
 }
 
-.progressbar li {
+.progressbar li { /*style på partilogoerne*/
   list-style-type: none;
   float: left;
   width: 25%;
@@ -173,46 +164,23 @@ margin-bottom: 300px;
   padding: 5px;
 }
 
-.progressbar li:before {
-	width: 300px;
-	line-height: 30px;
-	border: 1px solid #DDDDDD;
-	top: 15px;
-	left: -50px;
-	z-index: -1;
-}
-
-.progressbar li:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  
-  top: 25px;
-  left: -50%;
-  z-index: -1;
-}
-
-.progressbar li:first-child:after {
-	content: none;
-}
 
 /* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
+.popup .popuptext { /*style for logoerne i venstre side*/
+  visibility: hidden; /*gemmer popup indtil man klikker*/
   width: 160px;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 1; /*placere det nye billede oven på partioversigen*/
   top: 100%;
   margin-left: -55px;
 }
 
 /* The actual popup (appears on top) */
-.popup1 .popuptext1 {
+.popup1 .popuptext1 { /*style for logoerne i højre side*/
   visibility: hidden;
   width: 160px;
   color: #fff;
@@ -226,20 +194,18 @@ margin-bottom: 300px;
 }
 
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* når du klikker på logoerne for venstre side(hide and show the popup) */
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
-
+/* når du klikker på logoerne for højre side(hide and show the popup) */
 .popup1 .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
-
-
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
@@ -252,7 +218,7 @@ margin-bottom: 300px;
   to {opacity:1 ;}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { /* placeringen af popup ved mobil enhed */
 	.popup .popuptext {
     margin-left: -240px; 
 	}
@@ -260,14 +226,14 @@ margin-bottom: 300px;
 		margin-left: -420px; 
   }
 
-  .persona {
+  .persona { 	/*style på img til popup mobil enhed */
     display: block;
     margin: 150px; 
     width: 300px;
   
   }
   
-	.so-img {
+	.so-img {  
 		width: 500px;
 	}
 }
@@ -281,26 +247,26 @@ margin-bottom: 300px;
 
 /* KANDIDAT TEST */
 
-.quizTitel
+.quizTitel /* style på overskrift*/
 {
 		text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.partiTestP{
+.partiTestP{ /* style på p tekst*/
 	font-size: 1.15rem;
 }
 
-.resultText
+.resultText /* style på resultaterne*/
 {
   margin-top: -50px; 
   font-size: 1.8rem;
   letter-spacing: 3px;
-	z-index: 3;
+	z-index: 3; /* placingen på z aksen */
 }
 
-.resultText img
+.resultText img /* billedene af logoerne når resultaterne kommer*/
 {
 	display: inline;
   border: none;
@@ -309,7 +275,7 @@ margin-bottom: 300px;
   margin-bottom: 20px;
 }
 
-.allQuestions
+.allQuestions /* spørgsmålene*/
 {
   padding: 50px 0px 80px 0px;
   font-size: 1.15rem;
@@ -317,7 +283,7 @@ margin-bottom: 300px;
 	
 }
 
-.btnQ {
+.btnQ { /* knapperne til ja og nej*/
   border: 2px solid black;
   background-color: transparent;
   color: black;
@@ -338,16 +304,16 @@ margin-bottom: 300px;
   background: #333333;
   color: white;
 }
-
+ 
 /*GRAFIK*/
-.img-grafik {
+.img-grafik { /* style på grafik billedet*/
 	width: 75%;
 	display: block;
 	margin: auto;
 	padding-bottom: 80px;
 }
 
-.grafik {
+.grafik { /* style på diven grafik */
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
@@ -364,7 +330,7 @@ margin-bottom: 300px;
 	padding: 50px 0 20px;
 }
 
-.social {
+.social { /* hele socialemedie diven*/
 	display: flex;
 	width: 100%;
 	padding: 80px 0 ;
@@ -372,7 +338,7 @@ margin-bottom: 300px;
 	background:image();
 }
 
-.so-img {
+.so-img { /* billederne af vores sociale medier*/
 	width: 100px;
 	padding-top: 50px;
 }
@@ -387,27 +353,26 @@ margin-bottom: 300px;
 	margin: auto;
 }
 
-.appen {
+.appen { /* overskriften*/
 
 	padding: 50px 10px 15px ;
 }
-.app-toptext {
+.app-toptext { /* teksten før video*/
   padding-top: 10px;
   padding-bottom: 20px;
 }
-.app-btn {
-	padding-bottom: 80px;
-	display: block;
-	margin: auto;
+
+.app-afstand{ /* afstand efte kapperne*/
+	padding-bottom: 20px;
 }
 
-.download {
+.download { /* teksten efter filmen*/
 	text-align: center;
 	padding-top: 20px;
 }
 
 
-.info {
+.info { /* knapperne for download og banner*/
   border: 2px solid black;
   background-color: transparent;
   color: black;
@@ -418,13 +383,13 @@ margin-bottom: 300px;
   text-align: center;
 }
 
-/* Blue */
+/* farven på knapperne */
 .info {
   border-color: #333333;
   color: #333333;
 }
 
-.info:hover {
+.info:hover { 
   background: #333333;
   color: white;
 }
@@ -437,7 +402,7 @@ margin-bottom: 300px;
   left: 0;
   bottom: 5px;
   width: 100%;
-  background:image();
+  background:image(); /* at man kun ser baggrunden fra siden*/
   color: #333333;
   text-align: center;
 	padding: 10px;
@@ -479,7 +444,7 @@ padding-bottom: 50px;
 }
 
 /*BACK TO TOP*/
-
+/* button fra w3school */
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
