@@ -377,8 +377,25 @@ margin-bottom: 300px;
   padding-top: 20px;
   font-size: 1.15rem;
 }
+.app1 {
+  padding: 0px 50px 0 200px;
+}
+.app2 {
+  padding: 0px 200px 0 50px;
 
+}
+  
+.app_advert {
+  width: 300px;
+  height: auto;
+}
 
+@media screen and (max-width: 900px) {
+	
+	.app_phones {
+   display: none;
+	}
+}
 .info { /* knapperne for download og banner*/
   border: 2px solid black;
   background-color: transparent;
