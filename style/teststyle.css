@@ -365,6 +365,7 @@ margin-bottom: 300px;
 .app-toptext { /* teksten før video*/
   padding-top: 10px;
   padding-bottom: 20px;
+  font-size: 1.15rem;
 }
 
 .app-afstand{ /* afstand efte kapperne*/
@@ -372,8 +373,9 @@ margin-bottom: 300px;
 }
 
 .download { /* teksten efter filmen*/
-	text-align: center;
-	padding-top: 20px;
+	text-align: left;
+  padding-top: 20px;
+  font-size: 1.15rem;
 }
 
 
