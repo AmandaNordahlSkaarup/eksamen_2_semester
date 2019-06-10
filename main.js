@@ -429,7 +429,7 @@ function C19Fx() {
 	}
 
 	let obj8 = {
-		image: "a.png",
+		image: "krp.png",
 		text: "Klaus Riskjær Pedersen E:",
 		val: klausR
 	}
